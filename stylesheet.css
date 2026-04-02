@@ -1,0 +1,77 @@
+    .leaf {border: 4px double gainsboro;
+        padding: 25px;
+        background-color: rgb(115, 143, 114);
+        font-size: 20px;
+        border-radius: 35px 5px;}
+
+    .backleaf {border: 4px double gainsboro;
+        padding: 25px;
+        background-color: rgb(86, 108, 86);
+        font-size: 20px;
+        border-radius: 5px 35px;}
+  
+   .plank {border: 4px double gainsboro;
+        padding: 25px;
+        margin-left: 15px;
+        margin-right: 20px;
+        background-color: rgb(132, 116, 78);
+        font-size: 20px;
+        border-radius: 50px;}
+  
+   .b-radius3 {border: 4px double gainsboro;
+    padding: 25px;
+    background-color:rgb(255, 255, 255);
+    color:  rgb(68, 10, 70);
+    border-radius: 13em 0.5em/1em 0.5em;}
+  
+   .b-radius4 {border: 4px double gainsboro;
+    padding: 25px;
+    background-color:rgb(255, 255, 0);
+    color:  rgb(8, 71, 19);
+    border-radius: 10em/1em;}
+  
+   .b-radius5 {border: 4px double rgb(42, 44, 46);
+    padding: 10px;
+    color:rgb(74, 76, 73);
+    background-color:rgb(211, 211, 211);
+    border-radius: 10px;
+    font-size: 30px;}
+
+    .blocksection {
+        display: flex;
+    }
+    
+    .block-button-n2 {
+        width: 50%;
+        margin: 12px;
+    }
+    
+    .term{
+        font-style: normal;
+        font-weight: 100;
+        font-size: 25px;
+        color: rgb(16, 3, 75) ;
+    }
+    
+    .main-theme-color {
+        background: rgb(42, 44, 46);
+        color: rgb(237, 244, 241);
+        font-size: 15px;
+        margin-left: 10px;
+        
+    }
+
+    
+
+    .leader-h1{
+        font-size: 50px;
+        margin-left: 20px;
+    }
+
+    .block-button-n4 {
+        width: 25%;
+        margin: 12px;
+    }
+
+
+    .main-text{margin-left: 20px;}
