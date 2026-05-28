@@ -1,0 +1,42 @@
+{% extends "A.html" %}
+
+{% block title %} Вход {% endblock %}
+
+{% block body %}
+
+    <main>
+        <div class="purplette">
+
+            <div class="white-sign">
+
+                <h1>Добро пожаловать!</h1>
+                <p>Сначала выполните вход или создайте новый аккаунт:</p>
+                <form method="post" action="/checklog" >
+
+
+                    <div class="a-input-group">
+                        <input type="text" name="Login" placeholder="Логин" value="{{Glogin}}"> 
+                    </div>
+
+                    <div class="a-input-group">
+                        <input type="text" name="PassW" placeholder="Пароль" value="{{Gpassword}}"> 
+                    </div>
+                
+                    <div class="a-input-group">
+                    <div class="a-plus">
+                        <p><input type="submit" name="Enter" value="Войти" class="logbutton"></p>
+
+                        <p><a href="/createacc"><input type="button" value="Создать аккаунт" class="logbutton"></a></p>  
+                         <!--Здесь будет переход на регистрацию-->
+                    </div>   
+                    </div>   
+
+
+                </form>
+                <p class="malin">{{Gtag}}</p> 
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
+

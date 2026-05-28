@@ -1,0 +1,45 @@
+{% extends "A.html" %}
+
+{% block title %} Вход {% endblock %}
+
+{% block body %}
+
+    <main>
+        <div class="dark-purplette">
+
+            <div class="white-sign">
+
+                <h2>Последнее</h2>
+                
+
+                    <hr>
+
+                <ul>
+                    {% for i in Gbooks : %}
+                        <li><a href="{{ url_for('openbook', book_id=i[0]) }}">{{ i[1] }}</a></li>
+                                                                                      
+                    {% endfor %}
+                </ul>
+
+                    <div class="a-input-group">
+                    <div class="a-plus">
+
+                    <p><a href="/BCK"><input type="button" value="Назад" class="logbutton"></a></p> 
+                    <p><a href="/NXT"><input type="button" value="Далее" class="logbutton"></a></p> 
+                    
+                    </div>
+                    </div>
+
+                    
+
+
+
+
+
+
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
+

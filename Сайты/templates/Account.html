@@ -1,0 +1,26 @@
+{% extends "A.html" %}
+
+{% block title %} Вход {% endblock %}
+
+{% block body %}
+
+    <main>
+        <div class="purplette">
+            <div class="white-board">
+                <p>{{Gname}}, {{Glogin}}</p>    
+                <p>книги</p>
+                <ul>
+                    {% for i in Gbooks : %}
+                        <li><a href="/openbook/book_{{ i[0] }}">{{ i[1] }}</a></li>
+                        
+                    {% endfor %}
+                </ul>
+                    <p>             показать ещё...</p>
+                <p><a href="/createbook"><input type="button" value="Создать книгу" class="logbutton"></a></p>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
+
+<!-- сайт \ страница \ подстраница -->

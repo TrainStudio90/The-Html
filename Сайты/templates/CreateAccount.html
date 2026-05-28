@@ -1,0 +1,43 @@
+{% extends "A.html" %}
+
+{% block title %} Регистрация {% endblock %}
+
+{% block body %}
+
+    <main>
+        <div class="purplette">
+            <div class="white-sign">
+
+                <h1>Создать новый аккаунт!</h1>
+                <p>Придумайте никнейм, логин и пароль:</p>
+                <form method="post" action="/checkreg">
+
+                        
+                    <div class="a-input-group">
+                        <input type="text" name="Name" placeholder="Никнейм" value="{{Gname}}"> 
+                    </div>
+                        
+                    <div class="a-input-group">
+                        <input type="text" name="Login" placeholder="Логин" value="{{Glogin}}"> 
+                    </div>
+
+                    <div class="a-input-group">
+                        <input type="text" name="PassW" placeholder="Пароль" value="{{Gpassword}}"> 
+                    </div>
+                
+                    <div class="a-input-group">
+                        <input type="password" name="RePassW" placeholder="Повторите пароль" value="{{Grepassword}}">
+                    </div>
+                
+                    <div class="a-input-group">
+                            <p><input type="submit" name="Enter" value="Создать" class="logbutton"></p>      
+                    </div>  
+                    <p class="malin">{{Gtag}}</p> 
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
+

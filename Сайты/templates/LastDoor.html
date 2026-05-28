@@ -1,0 +1,25 @@
+{% extends "A.html" %}
+
+{% block title %} Вход {% endblock %}
+
+{% block body %}
+
+    <main>
+        <div class="dark-purplette">
+
+            <div class="white-sign">
+                
+                <h2>Вы хотите завершить книгу?</h2>
+                <p>Как только вы нажмёте "завершить", книга отправится на модерацию и у вас не будет возможности её исправить. Вы можете продолжить книгу, нажав кнопку "вернуться".</p>
+                <div class="a-input-group">
+                    <div class="a-plus">
+                        <p><a href="/returnforbook"><input type="button" value="Вернуться" class="logbutton"></a></p>  
+                        <p><a href="/postbook"><input type="button" value="Завершить" class="logbutton"></a></p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
+

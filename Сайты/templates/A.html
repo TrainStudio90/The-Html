@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Музмир - {% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+    </head> 
+
+
+    <body>
+    <div class="a-plus"></div>
+        
+                
+                    <a href="{{ url_for('openbook', book_id=i[0]) }}"><img src="{{ url_for('static', filename='css/stylesheet.css') }}">{{ i[1] }}</a>
+                                                                                      
+                    
+        {% block body %}{% endblock %}
+
+
+    </body>
+</html>
